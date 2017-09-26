@@ -24,7 +24,7 @@ $email= $_SESSION['email'];
 </head>
 <body>
 	<h1>Cadastro de Usuários</h1>
-	<form action="add.php" method="POST">
+	<form action="informacoes_do_cliente.php" method="POST">
 		Nome: <input type="text" name="nome" placeholder="Digite seu Nome"><br><br>
 		Senha: <input type="password" name="senha" placeholder="Digite sua senha"><br><br>
 		Endereço: <input type="text" name="endereço" placeholder="Digite seu Endereço"><br><br>
@@ -41,7 +41,7 @@ $email= $_SESSION['email'];
 				<td><?=$cpf[$key]?></td>
 				<td><?=$telefone[$key]?></td>
 				<td><?=$email[$key]?></td>
-				<td><a href="deletar.php?id=<?=$key?>">Remover</a></td>
+				<td><a href="remover.php?id=<?=$key?>">Remover</a></td>
 			</tr>
 		<?php endforeach ?>
 	</table>

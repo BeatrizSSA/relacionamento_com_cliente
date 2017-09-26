@@ -21,5 +21,5 @@
 	array_push($_SESSION['telefone'], $telefone);
 	array_push($_SESSION['email'], $email);
 
-	// header('location:entrada.php');
+	// header('location:index.php');
 ?>

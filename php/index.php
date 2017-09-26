@@ -13,7 +13,7 @@ session_start();
         	Senha: <input type="password" name="senha">
         	<input type="submit">
     	</form>
-    	<p>Se não é cadastrado...<a href="../projeto_1/cadastro.php">aperte aqui</a></p>
+    	<p>Se não é cadastrado...<a href="../projeto_1/php/cadastro_do_cliente.php">aperte aqui</a></p>
     	
 	</body>
 </html>
