@@ -17,7 +17,7 @@
 	</head>
 	<body>
 		<h1>Sejam bem vindos! <?= $_SESSION['logado'] ?></h1>
-		<a href="sair.php">Sair</a>
+		<a href="deslogar.php">Sair</a>
 
 		<table border="1"> 
 		<?php foreach ($nomes as $key => $nome): ?>

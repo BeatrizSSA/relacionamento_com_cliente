@@ -9,5 +9,5 @@
 	unset($_SESSION['telefone'][$id]);
 	unset($_SESSION['email'][$id]);
 
-	header('location: cadastro.php');
+	header('location: pagina_do_cliente.php');
 ?>

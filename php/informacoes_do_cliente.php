@@ -19,6 +19,7 @@
 	array_push($_SESSION['telefone'], $telefone);
 	array_push($_SESSION['email'], $email);
 
+<<<<<<< HEAD:projeto_1/add.php
 	/*$_SESSION["Cadastros"]= [
 		
 		[$_SESSION["nomes"],$nomes],
@@ -30,4 +31,7 @@
 	];/*
 
 	 header('location:entrada.php');
+=======
+	// header('location:index.php');
+>>>>>>> e162856750f39ae12f9674c368c53b048d745292:php/informacoes_do_cliente.php
 ?>
