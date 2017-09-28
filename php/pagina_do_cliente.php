@@ -2,9 +2,9 @@
 // TA DANDO EERRO
 	session_start();
 	if ($_SESSION["logado"] == false) {
-		header("location: entrada.php");
+		header("location: index.php");
 	}
-	$nome = $_SESSION['nomes'];
+	$nomes = $_SESSION['nomes'];
 	$endereço = $_SESSION['endereço'];
 	$cpf = $_SESSION['cpf'];
 	$telefone = $_SESSION['telefone'];
@@ -16,18 +16,18 @@
 	<head>
 	</head>
 	<body>
-		<h1>Sejam bem vindos! <?= $_SESSION['logado'] ?></h1>
+		<h1>Sejam bem vindos! <?=  ?></h1>
 		<a href="deslogar.php">Sair</a>
 
 		<table border="1"> 
 		<?php foreach ($nomes as $key => $nome): ?>
 			<tr>
-				<td><?=$nomes?></td>
+				<td><?=$nome?></td>
 				<td><?=$endereço[$key]?></td>
 				<td><?=$cpf[$key]?></td>
 				<td><?=$telefone[$key]?></td>
 				<td><?=$email[$key]?></td>
-				<td><a href="deletar.php?id=<?=$key?>">Remover</a></td>
+				<td><a href="remover.php?id=<?=$key?>">Remover</a></td>
 			</tr>
  		 <?php endforeach ?>
 	</table>

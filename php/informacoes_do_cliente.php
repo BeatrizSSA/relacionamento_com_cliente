@@ -1,37 +1,30 @@
 <?php 
 	session_start();
-// GABRIEL, TA DANDO ERRO AQUI.
- echo"<pre>";var_dump($_SESSION);echo"</pre>";
-	$nome = $_POST['nomes'];
-	$senha= $_POST['senha'];
-	$endereço = $_POST['endereço'];
-	$cpf = $_POST['cpf'];
-	$telefone= $_POST['telefone'];
-	$email= $_POST['email'];
+ 	
+ 	if(!isset($_SESSION['nomes'], $_SESSION['senha'], $_SESSION['endereço'], $_SESSION['cpf'],
+	$_SESSION['telefone'], $_SESSION['email'] )){
+		$_SESSION['nomes'] = array();
+		$_SESSION['senha'] = array();
+		$_SESSION['endereço'] = array();
+		$_SESSION['cpf'] = array();
+		$_SESSION['telefone'] = array();
+		$_SESSION['email'] = array();
 
-	 if(!isset($_SESSION['nomes'])){
-	 	$_SESSION['nomes'] = array();
-	 }
-	array_push($_SESSION['nomes'], $nome);
-	array_push($_SESSION['senha'], $senha);
-	array_push($_SESSION['endereço'], $endereço);
-	array_push($_SESSION['cpf'], $cpf);
-	array_push($_SESSION['telefone'], $telefone);
-	array_push($_SESSION['email'], $email);
+		$_SESSION['nomes'][] = $_POST['nomes'];
+		$_SESSION['senha'][] = $_POST['senha'];
+		$_SESSION['endereço'][] = $_POST['endereço'];
+		$_SESSION['cpf'][] = $_POST['cpf'];
+		$_SESSION['telefone'][] = $_POST['telefone'];
+		$_SESSION['email'][] = $_POST['email'];
 
-<<<<<<< HEAD:projeto_1/add.php
-	/*$_SESSION["Cadastros"]= [
-		
-		[$_SESSION["nomes"],$nomes],
-		[$_SESSION["endereço"],$endereço],
-		[$_SESSION["cpf"],$cpf],
-		[$_SESSION["telefone"],$telefone],
-		[$_SESSION["email'"],$email]
-		
-	];/*
+	}else{
+		$_SESSION['nomes'][] = $_POST['nomes'];
+		$_SESSION['senha'][] = $_POST['senha'];
+		$_SESSION['endereço'][] = $_POST['endereço'];
+		$_SESSION['cpf'][] = $_POST['cpf'];
+		$_SESSION['telefone'][] = $_POST['telefone'];
+		$_SESSION['email'][] = $_POST['email'];
+	}
+	header('location:pagina_do_cliente.php');
 
-	 header('location:entrada.php');
-=======
-	// header('location:index.php');
->>>>>>> e162856750f39ae12f9674c368c53b048d745292:php/informacoes_do_cliente.php
 ?>
