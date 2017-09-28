@@ -25,6 +25,6 @@
 		$_SESSION['telefone'][] = $_POST['telefone'];
 		$_SESSION['email'][] = $_POST['email'];
 	}
-	header('location:pagina_do_cliente.php');
+	header('location:../php/index.php');
 
 ?>

@@ -10,12 +10,12 @@ session_start();
 </head>
 <body>
 	<h1>Entrar</h1>
-	<form action="../php/testar.php" method="POST">
-        Nome: <input type="text" name="nomes">
+	<form action="testar.php" method="POST">
+        Nome: <input type="text" name="nome">
         Senha: <input type="password" name="senha">
         <input type="submit">
     </form>
-    <p>Se não é cadastrado...<a href="../php/cadastro_do_cliente.php">aperte aqui</a></p>
+    <p>Se não é cadastrado...<a href="cadastro.php">aperte aqui</a></p>
 </body>
-
+</html>
 

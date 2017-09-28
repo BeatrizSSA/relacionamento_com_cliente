@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
 </head>
 <body>
 	<h1>Cadastro de Usuários</h1>
-	<form action="informacoes_do_cliente.php" method="POST">
+	<form action="../php/informacoes_do_cliente.php" method="POST">
 		Nome: <input type="text" name="nomes" placeholder="Digite seu Nome"><br><br>
 		Senha: <input type="password" name="senha" placeholder="Digite sua senha"><br><br>
 		Endereço: <input type="text" name="endereço" placeholder="Digite seu Endereço"><br><br>
@@ -17,3 +18,4 @@
 	</form><br>	
 </body>
 </html>
+
