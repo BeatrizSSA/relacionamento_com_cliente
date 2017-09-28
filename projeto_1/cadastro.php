@@ -2,7 +2,6 @@
 // TALVEZ DE ERRO, SERIO, SOCORRO...
 session_start();
 if (!isset($_SESSION['nomes'],$_SESSION['endereço'],$_SESSION['cpf'],$_SESSION['telefone'],$_SESSION['email'])) {
-	$_SESSION['nomes'] = array();
 	$_SESSION['senha'] = array();
 	$_SESSION['endereço'] = array();
 	$_SESSION['cpf'] = array();
@@ -14,6 +13,25 @@ $endereço = $_SESSION['endereço'];
 $cpf = $_SESSION['cpf'];
 $telefone= $_SESSION['telefone'];
 $email= $_SESSION['email'];
+echo"<pre>";var_dump($_SESSION);echo"</pre>";
+//if (!isset($_SESSION["Cadastros"])) {
+	
+	//$_SESSION["Cadastros"]= [
+		
+	//	[$_SESSION["nomes"],$nomes],
+	//	[$_SESSION["endereço"],$endereço],
+	//	[$_SESSION["cpf"],$cpf],
+	//	[$_SESSION["telefone"],$telefone],
+	//	[$_SESSION["email'"],$email]
+		
+	//];
+//}
+//$nomes = $_SESSION["nomes"];
+//$endereço = $_SESSION["endereço"];
+//$cpf = $_SESSION["cpf"];
+//$telefone= $_SESSION["telefone"];
+//$email= $_SESSION["email"];
+
 ?>
 
 <!DOCTYPE html>

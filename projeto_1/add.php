@@ -9,11 +9,9 @@
 	$telefone= $_POST['telefone'];
 	$email= $_POST['email'];
 
-	// if(!isset($_SESSION['nomes'])){
-	// 	$_SESSION['nomes'] = array();
-	// }
-
-
+	 if(!isset($_SESSION['nomes'])){
+	 	$_SESSION['nomes'] = array();
+	 }
 	array_push($_SESSION['nomes'], $nome);
 	array_push($_SESSION['senha'], $senha);
 	array_push($_SESSION['endereço'], $endereço);
@@ -21,5 +19,15 @@
 	array_push($_SESSION['telefone'], $telefone);
 	array_push($_SESSION['email'], $email);
 
-	// header('location:entrada.php');
+	/*$_SESSION["Cadastros"]= [
+		
+		[$_SESSION["nomes"],$nomes],
+		[$_SESSION["endereço"],$endereço],
+		[$_SESSION["cpf"],$cpf],
+		[$_SESSION["telefone"],$telefone],
+		[$_SESSION["email'"],$email]
+		
+	];/*
+
+	 header('location:entrada.php');
 ?>
