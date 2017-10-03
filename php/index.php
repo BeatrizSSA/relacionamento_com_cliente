@@ -9,19 +9,16 @@
 
 <div class="header">
   <h2>Relacionamento com Cliente</h2>
-  <p>Buscando sempre a sua Satisfação.</p>
 </div>
 
 <div id="navbar">
   <a class="active" href="index.php">Inicio</a>
-  <a href="cadastro_user.php">Login</a>
-  <a href="sobre.php">Sobre</a>
+  <a href="login.php">Login</a>
+  <a href="../php/projeto_1/sobre/sobre.html">Sobre</a>
   <a href="Ajuda.php">Ajuda</a>
 </div>
 
 <div class="content">
-  <h3>Relacionamento com Cliente</h3>
-  <p>Buscando sempre a sua Satisfação.</p>
   
 </div>
 
