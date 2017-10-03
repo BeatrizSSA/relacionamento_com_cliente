@@ -14,7 +14,7 @@
 <div id="navbar">
   <a class="active" href="index.php">Inicio</a>
   <a href="login.php">Login</a>
-  <a href="../php/projeto_1/sobre.html">Sobre</a>
+  <a href="../php/projeto_1/prototipodo_do_banco/sobre/sobre.html">Sobre</a>
   <a href="Ajuda.php">Ajuda</a>
 </div>
 
