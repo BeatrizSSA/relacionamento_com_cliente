@@ -2,19 +2,19 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
   <title>Menu</title>
 </head>
 <body onscroll="myFunction()">
 
 <div class="header">
   <h2>Relacionamento com Cliente</h2>
-</div>
+</div>  
 
 <div id="navbar">
-  <a class="active" href="index.php">Inicio</a>
+  <a class="active" href="../index.php">Inicio</a>
   <a href="php/login.php">Login</a>
-  <a href="php/prototipodo_do_banco/sobre/sobre.html">Sobre</a>
+  <a href="../sobre/sobre_projeto1.html">Sobre</a>
   <a href="php/Ajuda.php">Ajuda</a>
 </div>
 
