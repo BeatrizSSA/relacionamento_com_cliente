@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
   <title>Menu</title>
 </head>
 <body onscroll="myFunction()">
@@ -13,9 +13,9 @@
 
 <div id="navbar">
   <a class="active" href="index.php">Inicio</a>
-  <a href="login.php">Login</a>
-  <a href="../php/projeto_1/prototipodo_do_banco/sobre/sobre.html">Sobre</a>
-  <a href="Ajuda.php">Ajuda</a>
+  <a href="php/login.php">Login</a>
+  <a href="php/prototipodo_do_banco/sobre/sobre.html">Sobre</a>
+  <a href="php/Ajuda.php">Ajuda</a>
 </div>
 
 <div class="content">

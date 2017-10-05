@@ -10,7 +10,7 @@
 		header('location: php/pagina_do_cliente.php');
 	}else{
 		echo "Usuário ou senha estão errados.";
-		echo "<a href=' ../php/index.php'>Voltar</a>";
+		echo "<a href=' php/index.php'>Voltar</a>";
 	}
 
 

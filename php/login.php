@@ -1,11 +1,13 @@
 <?php  
-session_start();
-// echo"<pre>";var_dump($_SESSION);echo"</pre>";
+include '../index.php';
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 	<title>Cadastros</title>
 </head>
 <body>
@@ -15,7 +17,7 @@ session_start();
         Senha: <input type="password" name="senha">
         <input type="submit">
     </form>
-    <p>Se não é cadastrado...<a href="php/cadastro_do_cliente.php">aperte aqui</a></p>
+    <p>Se não é cadastrado...<a href="../php/cadastro_do_cliente.php">aperte aqui</a></p>
 </body>
 
 
