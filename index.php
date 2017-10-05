@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="estilomenu.css">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
   <title>Menu</title>
 </head>
 <body onscroll="myFunction()">
