@@ -13,7 +13,7 @@
 
 <div id="navbar">
   <a class="active" href="../index.php">Inicio</a>
-  <a href="php/login.php">Login</a>
+  <a href="../php/login.php">Login</a>
   <a href="../sobre/sobre_projeto1.php">Sobre</a>
   <a href="Ajuda.php">Ajuda</a>
 </div>
