@@ -1,5 +1,5 @@
 <?php
-//TA DANDO ERRO 
+
 	session_start();
 	$nome = $_POST['nomes'];
 	$senha = $_POST['senha'];
@@ -7,10 +7,10 @@
 	
 	if(verificacao($nome, $senha) == 1){
 		$_SESSION["logado"] = true;
-		header('location: php/pagina_do_cliente.php');
+		header('location: pagina_do_cliente.php');
 	}else{
 		echo "Usuário ou senha estão errados.";
-		echo "<a href=' php/index.php'>Voltar</a>";
+		echo "<a href=' index.php'>Voltar</a>";
 	}
 
 
@@ -25,13 +25,5 @@
 		}	
 		return $cont;
 	}
-	/*$_SESSION['logado'] = false;
-	if(isset($_SESSION['nomes']) == $nome && $_SESSION['senha'] == $indice ){
-		$_SESSION['logado'] = true;
-		header('location:pagina.php');
-		exit();
-		
-	}else{
-		echo "Usuário ou senha estão errados.";
-	}*/
+	
 ?>

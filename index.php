@@ -34,11 +34,11 @@
 <div class="container">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Webmarket</a>
+      <a class="navbar-brand" href="#"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Produtos
         <span class="caret"></span></a>
@@ -50,12 +50,12 @@
           <li><a href="#">amet</a></li>
         </ul>
       </li>
-      <li><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Sobre</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contato</a></li>
+      <li><a href="sobre_projeto1.php"><span class="glyphicon glyphicon-eye-open"></span> Sobre</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>Contato</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="cadastro_do_cliente.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>

@@ -17,7 +17,7 @@
 	</head>
 	<body>
 		<h1>Sejam bem vindos! <?=  ?></h1>
-		<a href="php/deslogar.php">Sair</a>
+		<a href="deslogar.php">Sair</a>
 
 		<table border="1"> 
 		<?php foreach ($nomes as $key => $nome): ?>
@@ -27,7 +27,7 @@
 				<td><?=$cpf[$key]?></td>
 				<td><?=$telefone[$key]?></td>
 				<td><?=$email[$key]?></td>
-				<td><a href="php/remover.php?id=<?=$key?>">Remover</a></td>
+				<td><a href="remover.php?id=<?=$key?>">Remover</a></td>
 			</tr>
  		 <?php endforeach ?>
 	</table>

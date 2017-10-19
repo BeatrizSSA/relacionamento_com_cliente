@@ -1,5 +1,5 @@
 <?php 
-	include '../php/menu.php';
+	include 'menu.php';
 ?>
 <html>
 <head>
