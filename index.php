@@ -8,7 +8,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<title>WebMarket - Sua loja online</title>
 	 <style>
-  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+
   .affix {
       top: 0;
       width: 100%;
@@ -19,26 +19,26 @@
   }
   </style>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <div class="container-fluid" style="background-color: black; color:#fff;height:200px; text-align: center;">
   <h1>Web Market</h1>
   <h3>A sua loja Online</h3>
-  <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati minus sapiente adipisci laborum, expedita, sit illo nemo quo animi aut. Perferendis voluptate libero iusto illum ab, mollitia reprehenderit laboriosam architecto.</p>
 </div>
 
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-  <ul class="nav navbar-nav">
-
-<div class="container">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebMarket</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <ul class="nav navbar-nav">
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Produtos
         <span class="caret"></span></a>
@@ -50,12 +50,12 @@
           <li><a href="#">amet</a></li>
         </ul>
       </li>
-      <li><a href="sobre_projeto1.php"><span class="glyphicon glyphicon-eye-open"></span> Sobre</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>Contato</a></li>
+      <li class="active"><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Sobre </a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contato </a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="cadastro_do_cliente.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>
@@ -67,9 +67,9 @@
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ol>
   <!-- Wrapper for slides -->
-  <div class="carousel-inner">
+  <div class="carousel-inner" align="center">
     <div class="item active">
-      <img src="galaxia.jpg" alt="Moon way">
+      <img src="galaxia.jpg" alt="Frutas">
       <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero accusantium, aspernatur recusandae est voluptatum beatae praesentium ullam, delectus facere dolores dignissimos quidem illum quasi! Neque nesciunt inventore maiores, ipsam labore.</p>
     </div>
 
