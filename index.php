@@ -1,64 +1,12 @@
+<?php
+  include 'header.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<title>WebMarket - Sua loja online</title>
-	 <style>
-
-  .affix {
-      top: 0;
-      width: 100%;
-  }
-
-  .affix + .container-fluid {
-      padding-top: 70px;
-  }
-  </style>
+  <title>Webmarket</title>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-<div class="container-fluid" style="background-color: black; color:#fff;height:200px; text-align: center;">
-  <h1>Web Market</h1>
-  <h3>A sua loja Online</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati minus sapiente adipisci laborum, expedita, sit illo nemo quo animi aut. Perferendis voluptate libero iusto illum ab, mollitia reprehenderit laboriosam architecto.</p>
-</div>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">WebMarket</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Produtos
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">lorem</a></li>
-          <li><a href="#">ipsum</a></li>
-          <li><a href="#">dolor</a></li>
-          <li><a href="#">sit</a></li>
-          <li><a href="#">amet</a></li>
-        </ul>
-      </li>
-      <li class="active"><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Sobre </a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contato </a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
+<body>
  <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -69,17 +17,17 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" align="center">
     <div class="item active">
-      <img src="galaxia.jpg" alt="Frutas">
+      <img src="img/galaxia.jpg" alt="Frutas">
       <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero accusantium, aspernatur recusandae est voluptatum beatae praesentium ullam, delectus facere dolores dignissimos quidem illum quasi! Neque nesciunt inventore maiores, ipsam labore.</p>
     </div>
 
     <div class="item">
-      <img src="galaxia1.jpg" alt="Andromeda">
+      <img src="img/galaxia1.jpg" alt="Verduras">
       <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores voluptatem ullam at a quae iusto ab atque blanditiis error sunt totam nobis impedit, perferendis quidem hic distinctio mollitia fuga adipisci!</p>
     </div>
 
     <div class="item">
-      <img src="galaxia3.jpg" alt="Nebulosa do Caranguejo">
+      <img src="img/galaxia3.jpg" alt="Carnes">
       <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid rem odio dignissimos beatae libero. Quisquam reprehenderit perferendis earum minus nam sed vel, fugit optio, eligendi debitis, aperiam, beatae recusandae ducimus.</p>
     </div>
   </div>
@@ -95,6 +43,49 @@
   </a>
 </div>
 </div>
+<div class="container">
+  <h2>Opiniões de nossos usuários</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="" target="_blank">
+         <span style="font-size: 40%"><i class="fa fa-user-circle-o fa-2x"></i></span>
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+        <span style=" font-size: 70%;"><i class="glyphicon glyphicon-user"></i></span>
+
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
+
+<?php
+
+include "footer.php";
+
+?>
