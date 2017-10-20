@@ -1,15 +1,7 @@
 <?php  
-	include 'menu.php';
+	include 'header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Cadastros</title>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-	
-</head>
-<body>
+
 	<div id="bia">
 		<h1>Entrar</h1>
 		<form class="form" action="testar.php" method="POST">
@@ -23,5 +15,7 @@
 	    </form>
 	    
     </div>
-</body>
-</html>
+
+<?php  
+	include 'footer.php';
+?>

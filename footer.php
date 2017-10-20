@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
+
+	<footer>
 	<style type="text/css">
-		
 		footer {
-			background-color: black;
-			color: white;
-			text-align: center;
+				background-color: black;
+				color: white;
 		}
 	</style>
-</head>
-<body>
-	<footer>
 		<form class="form-horizontal">
   			<div class="form-group">
    			<label class="control-label col-sm-2" for="email">receba nossas novidades por Email:</label>
