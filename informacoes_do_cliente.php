@@ -1,30 +1,38 @@
-<?php 
-	session_start();
- 	
- 	if(!isset($_SESSION['nomes'], $_SESSION['senha'], $_SESSION['endereço'], $_SESSION['cpf'],
-	$_SESSION['telefone'], $_SESSION['email'] )){
-		$_SESSION['nomes'] = array();
-		$_SESSION['senha'] = array();
-		$_SESSION['endereço'] = array();
-		$_SESSION['cpf'] = array();
-		$_SESSION['telefone'] = array();
-		$_SESSION['email'] = array();
-
-		$_SESSION['nomes'][] = $_POST['nomes'];
-		$_SESSION['senha'][] = $_POST['senha'];
-		$_SESSION['endereço'][] = $_POST['endereço'];
-		$_SESSION['cpf'][] = $_POST['cpf'];
-		$_SESSION['telefone'][] = $_POST['telefone'];
-		$_SESSION['email'][] = $_POST['email'];
-
-	}else{
-		$_SESSION['nomes'][] = $_POST['nomes'];
-		$_SESSION['senha'][] = $_POST['senha'];
-		$_SESSION['endereço'][] = $_POST['endereço'];
-		$_SESSION['cpf'][] = $_POST['cpf'];
-		$_SESSION['telefone'][] = $_POST['telefone'];
-		$_SESSION['email'][] = $_POST['email'];
+<?php  
+	$dbname = "id2969958_cadastro";
+	$usuario="id2969958_beatriz";
+	$senha = "projeto1";
+	try {
+	  	$conn = new PDO("mysql:host=localhost;dbname=$dbname", $usuario, $senha);
+	    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	} catch(PDOException $e) {
+	    echo 'ERROR: ' . $e->getMessage();
 	}
-	header('location:index.php');
 
+	$nome = $_POST["nome"];
+	$senha = $_POST["senha"];
+	$endereço = $_POST["endereço"];
+	$cpf = $_POST["cpf"];
+	$telefone = $_POST["telefone"];
+	$email = $_POST["email"];
+	
+
+	$sql = "INSERT INTO usuarios(Nome,Senha,Endereço,CPF,Telefone,Email) 
+		VALUES(:nome, :senha, :endereço, :cpf, :telefone, :email)";
+	$stmt = $conn->prepare( $sql );
+	$stmt->bindParam( ':nome', $nome );
+	$stmt->bindParam( ':senha', $senha );
+	$stmt->bindParam( ':endereço',$endereço );
+	$stmt->bindParam( ':cpf', $cpf);
+	$stmt->bindParam( ':telefone', $telefone);
+	$stmt->bindParam( ':email', $email);
+
+	$result = $stmt->execute();
+
+	if ( ! $result ){
+	    var_dump( $stmt->errorInfo() );
+	    exit;
+	}	  
+	// echo $stmt->rowCount() . "linhas inseridas";
+	header("location: login.php");
 ?>

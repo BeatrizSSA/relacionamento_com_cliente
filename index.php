@@ -71,7 +71,7 @@
         </a>
       </div>
     </div>
- <button type="button" class="btn btn-info btn-lg"><a href="moreinfo.php">Mais opiniões</a></button>
+ <button type="button" class="btn btn-info btn-lg"><a href="moreinfo.php">Mais opiniões</a></butto>
   </div>
 </div>
 <?php

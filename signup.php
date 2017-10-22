@@ -8,7 +8,7 @@
     <p style="text-align: center;">WebMarket, a sua conveniência virtual na palma da mão.</p>
   </div>
 </div>
-	<form>
+	<form action="../informacoes_do_cliente.php">
     <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
     <input id="email" type="text" class="form-control" name="nome" placeholder="Nome">
@@ -25,8 +25,8 @@
     <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
     <input id="password" type="number" class="form-control" name="telefone" placeholder="Telefone">
   </div>
-<button type="button" class="btn"><a href="index.php">Signup</a></button>
-
+<button type="button" class="btn"><a href="../informacoes_do_cliente.php">Signup</a></button>
+</form>
 <?php
 
 include "footer.php";
