@@ -5,14 +5,15 @@
 				background-color: black;
 				color: white;
 		}
+		label {
+			text-align: center;
+		}
 	</style>
 		<form class="form-horizontal">
   			<div class="form-group">
-   			<label class="control-label col-sm-2" for="email">receba nossas novidades por Email:</label>
+   			<label class="control-label col-sm-2" for="email">Um serviço produzido por WebMarket dúvidas? Ligue (81)3555-4667</label>
     			<div class="col-sm-5">
     				  <div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
  					 </div>
    				</div>
   			</div>
