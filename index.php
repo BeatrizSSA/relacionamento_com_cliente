@@ -1,5 +1,6 @@
 <?php
   include 'header.php';
+  include 'bd/BD_ligar.php';
 ?>
 <section>
  <div id="myCarousel" class="carousel slide" data-ride="carousel">
