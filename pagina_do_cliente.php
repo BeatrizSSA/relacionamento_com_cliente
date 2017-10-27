@@ -1,22 +1,16 @@
 <?php
-// TA DANDO EERRO
+include "BD_ligar.php";
+include 'header.php';
 	session_start();
 	if ($_SESSION["logado"] == false) {
 		header("location: index.php");
 	}
-	$nomes = $_SESSION['nomes'];
-	$endereço = $_SESSION['endereço'];
-	$cpf = $_SESSION['cpf'];
-	$telefone = $_SESSION['telefone'];
-	$email = $_SESSION['email'];
-	// $nomeDoUsuario = $_SESSION['logado'];
-	// $filmesDoUsuario = $_SESSION['filmes'][$nomeDoUsuario];
 ?>
 <html>
 	<head>
 	</head>
 	<body>
-		<h1>Sejam bem vindos! <?=  ?></h1>
+		<h1>Sejam bem vindos! </h1>
 		<a href="deslogar.php">Sair</a>
 
 		<table border="1"> 
