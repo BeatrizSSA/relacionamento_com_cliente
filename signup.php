@@ -1,6 +1,6 @@
 <?php  
   include 'header.php';
-  include 'conexao.php';
+  //include 'conexao.php';
 ?>
 
 <div class="container" backgorund-color="black">
@@ -9,7 +9,7 @@
     <p style="text-align: center;">WebMarket, a sua conveniência virtual na palma da mão.</p>
   </div>
 </div>
-<form action="bd/informacoescliente.php" method="POST">
+<form action="bd/conexao.php" method="POST">
   <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
     <input id="nome" type="text" class="form-control" name="nome" placeholder="Nome" required>
