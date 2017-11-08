@@ -2,8 +2,15 @@
   include 'header.php';
  
 ?>
+ 
+<?php
+  // session_start();
+   if($_SESSION['logado']){
+     header('location: pagina_do_usuario.php');
+   }
+?>
 
-  <form>
+<form action="login_autenticacao.php">
   <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
     <input id="email" type="text" class="form-control" name="email" placeholder="Email">

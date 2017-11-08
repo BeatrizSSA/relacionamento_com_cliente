@@ -9,8 +9,21 @@
     <p style="text-align: center;">WebMarket, a sua conveniência virtual na palma da mão.</p>
   </div>
 </div>
-<form action="bd/conexao.php" method="POST">
-  <div class="input-group">
+<form action="bd/cadastrarUsuario.php" method="POST" required>
+  <input type="text" name="Nome" placeholder="Nome" required>
+  <input type="text" name="Endereco" placeholder="Endereço" required>
+  <input type="number" name="Cpf" placeholder="CPF" required>
+  <input type="number" name="Telefone" placeholder="Telefone" required>
+  <input type="email" name="Email" placeholder="Email" required>
+  <input type="text" name="Login" placeholder="Login" required>
+  <input type="password" name="Senha" placeholder="Senha" required>
+  
+
+
+
+
+
+ <!--  <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
     <input id="nome" type="text" class="form-control" name="nome" placeholder="Nome" required>
   </div>
@@ -37,7 +50,7 @@
   <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
     <input id="password" type="password" class="form-control" name="senha" placeholder="Senha" required>
-  </div>
+  </div> -->
 <input type="submit" class="btn" value="Signup"></input>
 </form>
 
