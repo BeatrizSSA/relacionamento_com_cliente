@@ -1,30 +1,30 @@
 <?php  
 require 'conexao.php';
  
-// Recebe o termo de pesquisa se existir
- $termo = (isset($_GET['termo'])) ? $_GET['termo'] : '';
+// // Recebe o termo de pesquisa se existir
+//  $termo = (isset($_GET['termo'])) ? $_GET['termo'] : '';
  
-// // Verifica se o termo de pesquisa está vazio, se estiver executa uma consulta completa
-if (empty($termo)):
+// // // Verifica se o termo de pesquisa está vazio, se estiver executa uma consulta completa
+// if (empty($termo)):
  
-    $conexao = Conexao::getInstance();
-    $sql = 'SELECT Nome, Endereco, CPF, Telefone, Email, login, Senha FROM usuario';
-    $stm= $conexao->prepare($sql);
-    $stm->execute();
-    $clientes = $stm->fetchAll(PDO::FETCH_OBJ);
+//     $conexao = Conexao::getInstance();
+//     $sql = 'SELECT Nome, Endereco, CPF, Telefone, Email, login, Senha FROM usuario';
+//     $stm= $conexao->prepare($sql);
+//     $stm->execute();
+//     $clientes = $stm->fetchAll(PDO::FETCH_OBJ);
  
-else:
+// else:
  
-    // Executa uma consulta baseada no termo de pesquisa passado como parâmetro
-    $conexao = conexao::getInstance();
-    $sql = 'SELECT Nome, Endereco, CPF, Telefone, Email, login, Senha FROM usuario WHERE login LIKE :login OR Senha LIKE :Senha';
-    $stm = $conexao->prepare($sql);
-    $stm->bindValue(':login', $termo.'%');
-    $stm->bindValue(':Senha', $termo.'%');
-    $stm->execute();
-    $clientes = $stm->fetchAll(PDO::FETCH_OBJ);
+//     // Executa uma consulta baseada no termo de pesquisa passado como parâmetro
+//     $conexao = conexao::getInstance();
+//     $sql = 'SELECT Nome, Endereco, CPF, Telefone, Email, login, Senha FROM usuario WHERE login LIKE :login OR Senha LIKE :Senha';
+//     $stm = $conexao->prepare($sql);
+//     $stm->bindValue(':login', $termo.'%');
+//     $stm->bindValue(':Senha', $termo.'%');
+//     $stm->execute();
+//     $clientes = $stm->fetchAll(PDO::FETCH_OBJ);
  
-endif;
+// endif;
 
 ?>
 <!DOCTYPE html>

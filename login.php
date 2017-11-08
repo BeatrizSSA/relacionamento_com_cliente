@@ -1,9 +1,9 @@
 <?php  
-	include 'header.php';
-  include 'conexao.php';
+  include 'header.php';
+ 
 ?>
 
-	<form>
+  <form>
   <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
     <input id="email" type="text" class="form-control" name="email" placeholder="Email">
@@ -16,5 +16,5 @@
 </form>
 
 <?php  
-	include 'footer.php';
+  include 'footer.php';
 ?>

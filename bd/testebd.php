@@ -1,4 +1,5 @@
 <?php
+    require 'conexao.php';
 
 	$Nome = $_POST['Nome'];
 	$Endereço = $_POST['Endereco'];
@@ -7,7 +8,6 @@
 	$Email = $_POST['Email'];
 	$login = $_POST['login'];
 	$Senha = $_POST['Senha'];
-    require 'conexao.php';
     $conexao = Conexao::getInstance();
 
 	$sql = "INSERT INTO usuario(Nome, Endereco, CPF, Telefone, Email, login, Senha) VALUES (:Nome, :Endereco, :CPF, :Telefone, :Email,:login, :Senha)";
