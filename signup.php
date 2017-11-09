@@ -10,13 +10,13 @@
   </div>
 </div>
 <form action="bd/cadastrarUsuario.php" method="POST" required>
-  <input type="text" name="Nome" placeholder="Nome" required>
-  <input type="text" name="Endereco" placeholder="Endereço" required>
-  <input type="number" name="Cpf" placeholder="CPF" required>
-  <input type="number" name="Telefone" placeholder="Telefone" required>
-  <input type="email" name="Email" placeholder="Email" required>
-  <input type="text" name="Login" placeholder="Login" required>
-  <input type="password" name="Senha" placeholder="Senha" required>
+  <input type="text" name="nome" placeholder="Nome" required>
+  <input type="text" name="endereco" placeholder="Endereço" required>
+  <input type="number" name="cpf" placeholder="CPF" required>
+  <input type="number" name="telefone" placeholder="Telefone" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="login" placeholder="Login" required>
+  <input type="password" name="senha" placeholder="Senha" required>
   
 
 

@@ -20,17 +20,17 @@ mysqli_select_db($conexao, $banco) or die(mysqli_error());
 			window.location='login.php';
 		}
 	</script>
-</head>o
+</head>
 <body>
 
 <?php  
-$Login = $_POST['Login'];
-$Senha = $_POST['Senha'];
-$sql = mysqli_query($conexao,"SELECT * FROM Cadastro WHERE Login = '$Login' and Senha = '$Senha'") or die(mysql_error('Login ou Senha errado'));
+$login = $_POST['login'];
+$senha = $_POST['senha'];
+$sql = mysqli_query($conexao,"SELECT * FROM Cadastro WHERE login = '$login' and senha = '$senha'") or die(mysql_error('login ou senha errado'));
 $row = mysqli_num_rows($sql);
 if($row > 0){
-	$_SESSION['Login'] = $Login;
-	$_SESSION['Senha'] = $Senha;
+	$_SESSION['login'] = $login;
+	$_SESSION['senha'] = $senha;
 	$_SESSION['logado'] = True;
 	echo "<script>loginsucess()</script>";
 
