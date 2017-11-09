@@ -2,18 +2,18 @@
 
     require 'conexao.php';
  
-   $sql = 'UPDATE Cadastro SET Id=:Id, Nome=:Nome, Endereco=:Endereco, Cpf=:Cpf, Telefone=:Telefone, Email=:Email, Login=:Login, Senha=:Senha';
-            $sql .= 'WHERE Id = :Id';
+   $sql = 'UPDATE Cadastro SET id=:id, nome=:nome, endereco=:endereco, cpf=:cpf, telefone=:telefone, email=:email, login=:login, senha=:senha';
+            $sql .= 'WHERE id = :id';
  
             $stm = $conexao->prepare($sql);
-            $stm->bindValue(':Id', $Id);
-            $stm->bindValue(':Nome', $Nome);
-            $stm->bindValue(':Endereco', $Endereco);
-            $stm->bindValue(':Cpf', $Cpf);
-            $stm->bindValue(':Telefone', $Telefone); 
-            $stm->bindValue(':Email', $Email);
-            $stm->bindValue(':Login', $Login);
-            $stm->bindValue(':Senha', $Senha);
+            $stm->bindValue(':id', $id);
+            $stm->bindValue(':nome', $nome);
+            $stm->bindValue(':endereco', $endereco);
+            $stm->bindValue(':cpf', $cpf);
+            $stm->bindValue(':telefone', $telefone); 
+            $stm->bindValue(':email', $email);
+            $stm->bindValue(':login', $login);
+            $stm->bindValue(':senha', $senha);
             $retorno = $stm->execute();
  
             if ($retorno):
