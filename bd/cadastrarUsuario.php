@@ -10,7 +10,7 @@
 	$login = $_POST["login"];
 	$senha = $_POST["senha"];
 
-	$sql = "INSERT INTO Cadastro(id, nome, endereco,cpf,telefone,email,login,senha) 
+	$sql = "INSERT INTO usuarios(id, nome, endereco,cpf,telefone,email,login,senha) 
 		VALUES( :id, :nome, :endereco, :cpf, :telefone,:email, :login, :senha)";
 	$stmt = $conn->prepare( $sql );
 	$stmt->bindParam( ':id', $id );

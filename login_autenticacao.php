@@ -14,7 +14,7 @@ mysqli_select_db($conexao, $banco) or die(mysqli_error());
 	<title>Autenticação</title>
 	<script type="text/javascript">
 		function loginsucess(){
-			window.location='pagina_do_usuario.php';
+			window.location='pagina_do_cliente.php';
 		}
 		function loginfailed(){
 			window.location='login.php';
@@ -26,14 +26,13 @@ mysqli_select_db($conexao, $banco) or die(mysqli_error());
 <?php  
 $login = $_POST['login'];
 $senha = $_POST['senha'];
-$sql = mysqli_query($conexao,"SELECT * FROM Cadastro WHERE login = '$login' and senha = '$senha'") or die(mysql_error('login ou senha errado'));
+$sql = mysqli_query($conexao,"SELECT * FROM usuarios WHERE login = '$login' and senha = '$senha'") or die(mysql_error('Login ou senha errado'));
 $row = mysqli_num_rows($sql);
 if($row > 0){
 	$_SESSION['login'] = $login;
 	$_SESSION['senha'] = $senha;
 	$_SESSION['logado'] = True;
 	echo "<script>loginsucess()</script>";
-
 }
 else{
 	echo "<script>loginfailed()</script>";

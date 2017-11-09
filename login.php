@@ -6,20 +6,20 @@
 <?php
   // session_start();
    if($_SESSION['logado']){
-     header('location: pagina_do_usuario.php');
+     header('location: pagina_do_cliente.php');
    }
 ?>
 
 <form action="login_autenticacao.php">
   <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+    <input id="login" type="text" class="form-control" name="login" placeholder="login">
   </div>
   <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+    <input id="password" type="password" class="form-control" name="senha" placeholder="senha">
   </div>
-  <button type="button" class="btn btn-default"><a href="clientpage.php">Login</a></button>
+  <input type="submit" class="btn btn-default"></input>
 </form>
 
 <?php  
