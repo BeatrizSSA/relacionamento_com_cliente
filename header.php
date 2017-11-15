@@ -1,4 +1,5 @@
 <?php
+
 session_start();
   if(!isset($_SESSION['logado'])){
     $_SESSION['logado'] = [];
@@ -48,7 +49,7 @@ session_start();
       <h3>Sua conveniência na palma da mão</h3>
     <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" style="z-index: 1000;">
       <div class="container-fluid">
-      <div class="navbar-header">
+      <!-- <div class="navbar-header"> -->
       
                   
     <?php
@@ -99,7 +100,7 @@ session_start();
         </div>
         </div>
         </nav>
-      </div>
+      <!-- </div> -->
     </div>
   </header> 
 

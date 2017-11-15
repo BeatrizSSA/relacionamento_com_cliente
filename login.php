@@ -4,7 +4,7 @@
  
 ?>
 
-<?php
+    <?php
     // session_start();
     if($_SESSION['logado']){
             header('location: pagina_do_cliente.php');
@@ -27,7 +27,7 @@
                 <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
             </form><!-- /form -->
 
-            <form class="form-signin" action="cadastro_usuario.php" method="POST">
+            <form class="form-signin" action="signup.php" method="POST">
                 Ainda não é cadastrado?<br>
                 <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit"> Cadastre-se! </button>
             </form>
