@@ -1,6 +1,10 @@
 <?php  
   include 'header.php';
   //include 'conexao.php';
+    // session_start();
+    if($_SESSION['logado']==True){
+        echo "<script> window.location='pagina_do_cliente.php'</script>'";
+    }
 ?>
 
 <div class="container" backgorund-color="black">
@@ -10,20 +14,8 @@
   </div>
 </div>
 <form action="bd/cadastrarUsuario.php" method="POST" required>
-  <input type="text" name="nome" placeholder="Nome" required>
-  <input type="text" name="endereco" placeholder="Endereço" required>
-  <input type="number" name="cpf" placeholder="CPF" required>
-  <input type="number" name="telefone" placeholder="Telefone" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <input type="text" name="login" placeholder="Login" required>
-  <input type="password" name="senha" placeholder="Senha" required>
-  
 
-
-
-
-
- <!--  <div class="input-group">
+  <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
     <input id="nome" type="text" class="form-control" name="nome" placeholder="Nome" required>
   </div>
@@ -50,8 +42,8 @@
   <div class="input-group">
     <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
     <input id="password" type="password" class="form-control" name="senha" placeholder="Senha" required>
-  </div> -->
-<input type="submit" class="btn" value="Signup"></input>
+  </div>
+<input type="submit" class="btn"></input>
 </form>
 
 <br>

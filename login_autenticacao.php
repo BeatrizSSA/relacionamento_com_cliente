@@ -20,12 +20,13 @@ mysqli_select_db($conexao, $banco) or die(mysqli_error());
 			window.location='login.php';
 		}
 	</script>
-</head>
+</head>o
 <body>
 
 <?php  
 $login = $_POST['login'];
 $senha = $_POST['senha'];
+
 $sql = mysqli_query($conexao,"SELECT * FROM usuarios WHERE login = '$login' and senha = '$senha'") or die(mysql_error('Login ou senha errado'));
 $row = mysqli_num_rows($sql);
 if($row > 0){
@@ -33,6 +34,7 @@ if($row > 0){
 	$_SESSION['senha'] = $senha;
 	$_SESSION['logado'] = True;
 	echo "<script>loginsucess()</script>";
+
 }
 else{
 	echo "<script>loginfailed()</script>";

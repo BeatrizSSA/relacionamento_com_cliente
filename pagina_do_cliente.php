@@ -37,10 +37,10 @@ if (empty($termo)):
                     <input type="text" class="form-control" id="termo" name="termo" placeholder="Infome o Nome do produto">
                 </div>
                     <button type="submit" class="btn btn-primary">Pesquisar</button>
-                    <a href='armazenamento_itens.php' class="btn btn-primary">Ver Todos</a>
+                    <a href='pagina_do_cliente.php' class="btn btn-primary">Ver Todos</a>
                 </form>    
                 
-    <a href='cadastro_produto.php' class="btn btn-success pull-right">Cadastrar Novo Produtos</a>
+    <a href='lista1.php' class="btn btn-success pull-right">Cadastrar Novo Produtos</a>
                 <div class='clearfix'></div> 
 
 
@@ -85,7 +85,7 @@ if (empty($termo)):
                 <td> ".$nome."</td>
                 <td>".$quantidade."</td>
                 <td>R$"."$preco"."</td>
-                <td><a href='../bd/excluir.php?id=".$id."'><i class='fa fa-2x fa-trash sr-icons' title='Deletar Produto'></i></a></td>
+                <td><a href='bd/excluir.php?id=".$id."'><i class='fa fa-2x fa-trash sr-icons' title='Deletar Produto'></i></a></td>
                 <td><a href='bd/editar.php?id=".$row['id']."'><i class='glyphicon glyphicon-cog' title='editar Produto'></i></a></td>
             </tr>";
 ?>
