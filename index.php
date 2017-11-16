@@ -1,7 +1,7 @@
 <?php
   
   include 'header.php';
-  // include 'bd/conexao.php';
+  include 'bd/conexao.php';
 ?>
 
 <section>
