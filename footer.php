@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>WebMarket</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-
-  <div class="push"></div>
+<div class="push"></div>
   <footer class="footer">
     
     <style type="text/css">
     
     footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
       background-color: black;
       color: white;
+      border-top: solid white;
+      border-bottom: solid white;
+    }
+    label {
+      padding: 0.5%;
+      text-align: center;
     }
     .footer,
     .push {
@@ -22,14 +22,9 @@
     }
     </style>
       
-    <form class="form-horizontal">
-      <div class="form-group">
-        <label class="control-label col-sm-2">Um serviço produzido por WebMarket dúvidas? Ligue (81)3555-4667</label>
-          <div class="col-sm-5">
-            <div class="input-group">
+        <label>Um serviço produzido por WebMarket dúvidas? Ligue (81)3555-4667 ou mande um e-mail para webmarket@gmail.com</label>
             </div>
           </div>
-      </div>
     </form>
   </footer> 
 
