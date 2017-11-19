@@ -65,16 +65,42 @@ session_start();
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
+          <?php if ($_SESSION['logado']==True): ?>
+                <li> <a href="produtos.php">Cadastrar itens</a></li>
+                <li> <a href="pagina_do_cliente.php">Produtos</a></li>  
+              <?php endif ?>
+              
         <li><a href="sobre.php"><span class="glyphicon glyphicon-eye-open"></span> Sobre</a></li>
         <li><a href="creators.php"><span class="glyphicon glyphicon-earphone"></span> Contato</a></li>
+<?php
+  if($_SESSION['logado'] == True){
+        $llogin = $_SESSION['login'];
+        $ssenha = $_SESSION['senha'];
+        $host = "localhost";
+        $usuario = "id2969958_webmarket";
+        $senha = "rogerinho";
+        $bd = "id2969958_projeto";
+        $strcon = mysqli_connect("$host","$usuario","$senha","$bd") or die('Erro ao conectar ao banco!');
+        $sql = "SELECT * FROM usuarios WHERE login = '$llogin' and senha = '$ssenha'";
+        $resultado = mysqli_query($strcon, $sql) or die('Erro ao tentar cadastrar registro');
+        $name = mysqli_query($strcon, "SELECT nome FROM usuarios WHERE login = '$llogin' and senha = '$ssenha'") or die(mysqli_error($strcon));
+        $re = mysqli_fetch_array($name);
+        echo "<li><div class='dropdown'>
+            <div class='dropdown-content'>
+              <li><a href='logout.php'>Bem Vindo $llogin Sair <i class='fa fa-power-off' aria-hidden='true'></i></a></li>
+            </div>
+          </div></li>";
+              }
+?>
+<?php
+    if($_SESSION['logado'] == False){
+        echo "<li><a class='navbar-brand' href='login.php'>Login <i class='glyphicon glyphicon-log-in' aria-hidden='true'></i></a></li>"; 
+                }
+?>
       </ul>
-       <ul class="nav navbar-nav navbar-right">
-      <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-        </div>
+         </div>
         </div>
         </nav>
-      <!-- </div> -->
     </div>
   </header> 
 

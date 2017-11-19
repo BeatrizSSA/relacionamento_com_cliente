@@ -23,7 +23,7 @@
         <input type="text" name="quantidade" placeholder="Digite a quantidade" required/><br>
         <br>
         Preço
-        <input type="numero" name="preco" placeholder="Digite o Preço de barras." maxlength="5" required/><br>
+        <input type="numero" name="preco" placeholder="Digite o Preço." maxlength="5" required/><br>
         <br>
             
         <input type="submit" value="Salvar"> <br>

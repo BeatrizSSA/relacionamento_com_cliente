@@ -2,11 +2,6 @@
 
   include 'header.php';
   //include 'conexao.php';
-    // session_start();
-    if($_SESSION['logado']==True){
-        echo "<script> window.location='pagina_do_cliente.php'</script>'";
-    }
-
 ?>
 <link rel="stylesheet" type="text/css" href="signup.css">
   <div class="form-style-10">
