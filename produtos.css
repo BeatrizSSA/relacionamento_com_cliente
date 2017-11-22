@@ -2,7 +2,7 @@
 body {
     background-image: linear-gradient(to bottom, white, black);
     text-align: center;
-    /*font-size: 100px;*/
+    font-size: 12px;
 }
 .form-style-10{
     width:1500px;
@@ -33,4 +33,7 @@ label {
 .card-container.card {
     max-width: 350px;
     padding: 40px 40px;
+}
+.formulario{
+    
 }

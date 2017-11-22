@@ -68,5 +68,3 @@ require "bd/conexao.php";
     mysqli_close($strcon);
 ?>
         </table>        
-</body>
-</html>
