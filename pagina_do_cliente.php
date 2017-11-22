@@ -11,11 +11,11 @@ require "bd/conexao.php";
             <div class='col-md-7'>
                 <input type="text" class="form-control" id="pesquisa" name="pesquisa" placeholder="Infome o Nome do produto" required>
             </div>
-                <button type="submit" class="btn btn-primary">Pesquisar</button>
+                <button type="submit" class="btn" style="background: black; color: white;">Pesquisar</button>
     </form>    
-                <a href='pagina_do_cliente.php' class="btn btn-primary">Ver Todos</a>
+                <a href='pagina_do_cliente.php' class="btn" style="background: black; color: white;">Ver Todos</a>
                 
-    <a href='produtos.php' class="btn btn-success pull-right">Cadastrar Novo Produtos</a>
+    <a href='produtos.php' class="btn" style="background: blue; color: white;">Cadastrar Novo Produtos</a>
                 <div class='clearfix'></div> 
 
 <br>
