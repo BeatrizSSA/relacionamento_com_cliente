@@ -1,0 +1,36 @@
+
+body {
+    background-image: linear-gradient(to bottom, white, black);
+    text-align: center;
+    /*font-size: 100px;*/
+}
+.form-style-10{
+    width:400px;
+    padding:30px;
+    margin:40px auto;
+    background: #FFF;
+    border-radius: 10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 10;
+}
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}

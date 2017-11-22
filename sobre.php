@@ -1,48 +1,20 @@
 <?php 
 	include 'header.php';
 ?>
-<html>
-<head>
 
+	<link rel="stylesheet" ty   pe="text/css" href="sobre.css">
+	<link rel="stylesheet"  href="./font-awesome-4.7.0/css/font-awesome.min.css">
+ 	<div class="form-style-10">
 	<meta charset="utf-8">
 	<title>Projeto de prática 1</title>
 
-	<style>
-		p{
-			font-size: 20px;
-			color: black;
-		}
-		/*body{
-			background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)), url("../imagens/img.png");
-		}*/
-		.form {
-			text-align: justify;
-			color: black;
-		}
-		h1 {
-			text-align: center;
-			/*color: yellow;*/*/
-		}
-		h2 {
-			text-align: center;
-			/*color: yellow;*/
-		}
-		a {
-			/*color: white;*/
-			text-decoration: none;
-		}
-	</style>
-</head>
-<body>
-
-
 	<div class="form"> 
 	<div class="container" backgorund-color="black">
-  <div class="jumbotron">
+  <div class="jumbotron form-style-10">
     <h2>Sobre nós</h2>      
     <p align="center">Webmarket, a sua conveniência virtual na palma da mão</p>
   </div>
-</div>	
+	</div>	
 		<p> O objetivo do projeto é criar um site que melhore a interação entre cliente e empreendedor. 
 		O tipo de negócio em que o contexto será aplicado é a industria alimenticia com foco nos microempreendedores como o " tio da esquina ".
 		O serviço receberá como parametro, melhor retorno para o empreendendor da qualidade de seus serviços e seus produtos, onde os clientes
@@ -58,10 +30,7 @@
 		<img src="img/IFPE.jpeg" height="200" width="200">
 
 	</div>
-</body>
 
-
-</html>
 <?php 
 	include 'footer.php';
 ?>

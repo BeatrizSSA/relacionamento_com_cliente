@@ -5,6 +5,8 @@
 <body style="text-align:center;">
 <br>
 <br>
+	<link rel="stylesheet" ty   pe="text/css" href="produtos.css">
+    <link rel="stylesheet"  href="./font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="produtos.css">
  	<div class="form-style-10">
     <form action="bd/cadastrar_produtos.php" method="POST" class="formulario">
