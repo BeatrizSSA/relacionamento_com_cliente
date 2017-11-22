@@ -4,7 +4,7 @@ body {
     text-align: center;
 }
 .form-style-10{
-    width:450px;
+    width:1500px;
     padding:30px;
     margin:40px auto;
     background: #FFF;
@@ -19,6 +19,7 @@ label {
     font-family: Roboto;
     font-size: 13px;
     font-weight: 300;
+    margin-left: 10;
 }
 .btn {
     font-weight: 700;

@@ -2,18 +2,11 @@
     include 'header.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/estilomenu.css">
-    <link rel="stylesheet"  href="./font-awesome-4.7.0/css/font-awesome.min.css">
-    <title>Tabela</title>
-</head>
-
 <body style="text-align:center;">
 <br>
 <br>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+ 	<div class="form-style-10">
     <form action="bd/cadastrar_produtos.php" method="POST" class="formulario">
      
         Nome Do Produto 
