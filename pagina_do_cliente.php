@@ -7,7 +7,7 @@ require "bd/conexao.php";
  <br>
     <link rel="stylesheet" ty   pe="text/css" href="itens.css">
     <link rel="stylesheet"  href="./font-awesome-4.7.0/css/font-awesome.min.css">
- 	<link rel="stylesheet" type="text/css" href="pagina_do_cliente.css">
+ 	<link rel="stylesheet" type="text/css" href="../css/pagina_do_cliente.css">
  	<div class="form-style-10">
     <form action="pesquisar.php" method="POST" id='form-contato' class="form-horizontal col-md-10">
         <label class="col-md-2 control-label" for="termo">Pesquisar</label>

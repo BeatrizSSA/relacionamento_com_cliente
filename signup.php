@@ -3,7 +3,7 @@
   include 'header.php';
   //include 'conexao.php';
 ?>
-<link rel="stylesheet" type="text/css" href="signup.css">
+<link rel="stylesheet" type="text/css" href="../css/signup.css">
   <div class="form-style-10">
     <h2>Cadastre-se!<span>Saiba quando seu produto estará disponível.</span></h2>
 <form action="bd/cadastrarUsuario.php" method="POST" required>

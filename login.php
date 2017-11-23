@@ -5,7 +5,7 @@
             header('location: pagina_do_cliente.php');
         }
     ?>
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
     
     <div class="container">
         <div class="card card-container">

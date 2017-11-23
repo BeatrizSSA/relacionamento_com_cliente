@@ -2,7 +2,7 @@
 	include 'header.php';
 ?>
 
-	<link rel="stylesheet" ty   pe="text/css" href="sobre.css">
+	<link rel="stylesheet" type="text/css" href="../css/sobre.css">
 	<link rel="stylesheet"  href="./font-awesome-4.7.0/css/font-awesome.min.css">
  	<div class="form-style-10">
 	<meta charset="utf-8">
