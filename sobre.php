@@ -2,7 +2,7 @@
 	include 'header.php';
 ?>
 
-	<link rel="stylesheet" type="text/css" href="../css/sobre.css">
+	<link rel="stylesheet"  type="text/css" href="../css/sobre.css">
 	<link rel="stylesheet"  href="./font-awesome-4.7.0/css/font-awesome.min.css">
  	<div class="form-style-10">
 	<meta charset="utf-8">
@@ -10,7 +10,7 @@
 
 	<div class="form"> 
 	<div class="container" backgorund-color="black">
-  <div class="jumbotron form-style-10">
+  <div class="jumbotron ">
     <h2>Sobre nós</h2>      
     <p align="center">Webmarket, a sua conveniência virtual na palma da mão</p>
   </div>
