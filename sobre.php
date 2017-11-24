@@ -8,13 +8,15 @@
 	<meta charset="utf-8">
 	<title>Projeto de prática 1</title>
 
-	<div class="form"> 
-	<div class="container" backgorund-color="black">
-  <div class="jumbotron ">
-    <h2>Sobre nós</h2>      
-    <p align="center">Webmarket, a sua conveniência virtual na palma da mão</p>
-  </div>
-	</div>	
+	<!-- <div class="form">  -->
+	<!-- <div class="container" background-color="black"> -->
+		  <div class="jumbotron ">
+			  <div class="container">
+			    <h2>Sobre nós</h2>      
+			    <p>Webmarket, a sua conveniência virtual na palma da mão</p>
+			    </div>
+		  </div>
+	<!-- </div>	 -->
 		<p> O objetivo do projeto é criar um site que melhore a interação entre cliente e empreendedor. 
 		O tipo de negócio em que o contexto será aplicado é a industria alimenticia com foco nos microempreendedores como o " tio da esquina ".
 		O serviço receberá como parametro, melhor retorno para o empreendendor da qualidade de seus serviços e seus produtos, onde os clientes

@@ -43,8 +43,8 @@ require "bd/conexao.php";
         $bd = "id2969958_projeto";
         $strcon = mysqli_connect("$host","$usuario","$senha","$bd") or die('Erro ao conectar ao banco!');
         $sql = "SELECT * FROM cadastro";
-        $resultado = mysqli_query($strcon, $sql) or die('Erro ao tentar cadastrar registro');
-        $name = mysqli_query($strcon, "SELECT id, nome, quantidade, preco  FROM cadastro") or die(mysqli_error($strcon));
+        $resultado = mysqli_query($conn, $sql) or die('Erro ao tentar cadastrar registro');
+        $name = mysqli_query($conn, "SELECT id, nome, quantidade, preco  FROM cadastro") or die(mysqli_error($conn));
         $re = mysqli_fetch_array($name);
         while($dados = mysqli_fetch_array($resultado)): 
 ?>
@@ -65,6 +65,6 @@ require "bd/conexao.php";
       
 <?php
     endwhile;
-    mysqli_close($strcon);
+    mysqli_close($conn);
 ?>
         </table>        
