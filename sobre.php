@@ -26,7 +26,7 @@
 			Ana Beatriz Silva S. de Andrade - <a href="mailto: ana-beatriz63@live.com">ana-beatriz63@live.com </a> <br>
             Juliana Maria da Silva Venâncio - <a href="mailto: julianamaria.sv@gmail.com">julianamaria.sv@gmail.com</a> <br>
 			Lucas Emanuel Sena de Araújo - <a href="mailto: silverlred12@gmail.com">silverlred12@gmail.com </a> <br>
-            Ponciana Andréa Bronckhorst da Silva- <a href="mailto: ponciana12pandrea@gmail.com">ponciana12pandrea@gmail.com</a> <br> </p>
+            <!-- Ponciana Andréa Bronckhorst da Silva- <a href="mailto: ponciana12pandrea@gmail.com">ponciana12pandrea@gmail.com</a>  --><br> </p>
 		<img src="img/IFPE.jpeg" height="200" width="200">
 
 	</div>

@@ -71,7 +71,7 @@ session_start();
               <?php endif ?>
               
         <li><a href="sobre.php"><span class="glyphicon glyphicon-eye-open"></span> Sobre</a></li>
-        <li><a href="creators.php"><span class="glyphicon glyphicon-earphone"></span> Contato</a></li>
+        <li><a href="contatos.php"><span class="glyphicon glyphicon-earphone"></span> Contato</a></li>
 <?php
   if($_SESSION['logado'] == True){
         $llogin = $_SESSION['login'];

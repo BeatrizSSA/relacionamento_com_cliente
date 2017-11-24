@@ -1,11 +1,13 @@
 
 body {
     background-image: linear-gradient(to bottom, white, black);
-    text-align: left;
-    /*font-size: 100px;*/
+    text-align: center;
+}
+img{
+    width: 200px;
 }
 .form-style-10{
-    width:400px;
+    width:450px;
     padding:30px;
     margin:40px auto;
     background: #FFF;
@@ -20,7 +22,6 @@ label {
     font-family: Roboto;
     font-size: 13px;
     font-weight: 300;
-    margin-left: 10;
 }
 .btn {
     font-weight: 700;
@@ -34,6 +35,3 @@ label {
     max-width: 350px;
     padding: 40px 40px;
 }
-/*.jumbotron{
-    margin: auto;
-}*/
