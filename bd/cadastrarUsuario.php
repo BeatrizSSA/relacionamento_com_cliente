@@ -10,13 +10,13 @@
 	$login = $_POST["login"];
 	$senha = $_POST["senha"];
 
-	$sql = "INSERT INTO usuarios(id, nome, endereco,cpf,telefone,email,login,senha) 
-		VALUES( :id, :nome, :endereco, :cpf, :telefone,:email, :login, :senha)";
-	$stmt = $conn->prepare( $sql );
+		
+$stmt = $conn->prepare("INSERT INTO usuarios( id,nome,endereco,cpf,telefone,email,login,senha) VALUES( :id,:nome,:endereco,:cpf,:telefone,:email,:login,:senha)");
+	
 	$stmt->bindParam( ':id', $id );
 	$stmt->bindParam( ':nome', $nome );
 	$stmt->bindParam( ':endereco', $endereco );
-	$stmt->bindParam( ':cpf',$cpf );
+	$stmt->bindParam( ':cpf', $cpf );
 	$stmt->bindParam( ':telefone', $telefone);
 	$stmt->bindParam( ':email', $email);
 	$stmt->bindParam( ':login', $login);

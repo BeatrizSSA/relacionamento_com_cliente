@@ -2,10 +2,10 @@
 
     require 'conexao.php';
  
-   $sql = 'UPDATE Cadastro SET id=:id, nome=:nome, endereco=:endereco, cpf=:cpf, telefone=:telefone, email=:email, login=:login, senha=:senha';
-            $sql .= 'WHERE id = :id';
  
-            $stm = $conexao->prepare($sql);
+$stm = $conexao->prepare('UPDATE Cadastro SET nome= :nome, endereco= ?, cpf = ?, telefone = ?, email = ?, login =?,senha=?');
+            
+            $stm = 'WHERE id = ';
             $stm->bindValue(':id', $id);
             $stm->bindValue(':nome', $nome);
             $stm->bindValue(':endereco', $endereco);

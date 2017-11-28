@@ -37,16 +37,12 @@ require "bd/conexao.php";
                 <th>editar</th>
             </tr>
 <?php
-        $host = "localhost";
-        $usuario = "id2969958_webmarket";
-        $senha = "rogerinho";
-        $bd = "id2969958_projeto";
-        $strcon = mysqli_connect("$host","$usuario","$senha","$bd") or die('Erro ao conectar ao banco!');
-        $sql = "SELECT * FROM cadastro";
-        $resultado = mysqli_query($conn, $sql) or die('Erro ao tentar cadastrar registro');
-        $name = mysqli_query($conn, "SELECT id, nome, quantidade, preco  FROM cadastro") or die(mysqli_error($conn));
-        $re = mysqli_fetch_array($name);
-        while($dados = mysqli_fetch_array($resultado)): 
+        require "bd/conexao.php";
+        $stmt = "SELECT * FROM cadastro";
+        $resultado = PDO::query($conn, $stmt) or die('Erro ao tentar cadastrar registro');
+        $name = PDO::query($conn, "SELECT id, nome, quantidade, preco  FROM cadastro") or die(mysql_error($conn));
+        $re = fetchAll($name);
+        while($dados = fetchAll($resultado)): 
 ?>
         
 <?php
@@ -55,8 +51,8 @@ require "bd/conexao.php";
     $quantidade = $dados['quantidade'];
     $preco = $dados['preco'];
         echo "<tr>
-              <td> ".$nome."</td>
-              <td>".$quantidade."</td>
+              <td> "."$nome"."</td>
+              <td>"."$quantidade"."</td>
               <td>R$"."$preco"."</td>
               <td><a href='../bd/excluir.php?id=".$id."'><i class='glyphicon glyphicon-trash' title='Deletar Produto'></i></a></td>
               <td><a href='bd/editar.php?id=".$row['id']."'><i class='glyphicon glyphicon-cog' title='editar Produto'></i></a></td>
@@ -68,3 +64,4 @@ require "bd/conexao.php";
     mysqli_close($conn);
 ?>
         </table>        
+:
