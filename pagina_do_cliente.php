@@ -40,15 +40,10 @@ require "bd/conexao.php";
     include "bd/conexao.php";
     $stmt = "SELECT * FROM cadastro";
     foreach ($conn->query($stmt) as $row) {
-         echo $row['nome'];
-    }
-?>
-   
-<?php
-    $id = $dados['id'];
-    $nome=$dados['nome'];
-    $quantidade = $dados['quantidade'];
-    $preco = $dados['preco'];
+        $id = $row['id'];
+        $nome= $row['nome'];
+        $quantidade = $row['quantidade'];
+        $preco = $row['preco'];
         echo "<tr>
               <td> "."$nome"."</td>
               <td>"."$quantidade"."</td>
@@ -56,7 +51,7 @@ require "bd/conexao.php";
               <td><a href='../bd/excluir.php?id=".$id."'><i class='glyphicon glyphicon-trash' title='Deletar Produto'></i></a></td>
               <td><a href='bd/editar.php?id=".$row['id']."'><i class='glyphicon glyphicon-cog' title='editar Produto'></i></a></td>
             </tr>";
+    }
 ?>
-      
-
-        </table> 
+   
+      </table>   
