@@ -20,4 +20,4 @@
 	    exit;
 	}	  
 	header("location: ../pagina_do_cliente.php");
-:>
+?>

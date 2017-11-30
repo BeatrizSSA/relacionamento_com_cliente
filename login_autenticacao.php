@@ -23,21 +23,22 @@ require 'conexao.php';
 <body>
 
 <?php  
-$login = $_POST['login'];
-$senha = $_POST['senha'];
+	
+	$login = $_POST['login'];
+	$senha = $_POST['senha'];
 
-$sql = mysqli_query($conexao,"SELECT * FROM usuarios WHERE login = '$login' and senha = '$senha'") or die(mysql_error('Login ou senha errado'));
-$row = mysqli_num_rows($sql);
-if($row > 0){
-	$_SESSION['login'] = $login;
-	$_SESSION['senha'] = $senha;
-	$_SESSION['logado'] = True;
-	echo "<script>loginsucess()</script>";
+	$sql = mysqli_query($conexao,"SELECT * FROM usuarios WHERE login = '$login' and senha = '$senha'") or die(mysql_error('Login ou senha errado'));
+	$row = mysqli_num_rows($sql);
+	if($row > 0){
+		$_SESSION['login'] = $login;
+		$_SESSION['senha'] = $senha;
+		$_SESSION['logado'] = True;
+		echo "<script>loginsucess()</script>";
 
-}
-else{
-	echo "<script>loginfailed()</script>";
-}
+	}
+	else{
+		echo "<script>loginfailed()</script>";
+	}
 ?>
 
 </body>

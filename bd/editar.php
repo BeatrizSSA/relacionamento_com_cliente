@@ -20,8 +20,8 @@ $stm = $conexao->prepare('UPDATE Cadastro SET nome= :nome, endereco= ?, cpf = ?,
                 echo "<div class='alert alert-success' role='alert'>Registro editado com sucesso, aguarde você está sendo redirecionado ...</div> ";
             else:
                 echo "<div class='alert alert-danger' role='alert'>Erro ao editar registro!</div> ";
+                echo "<meta http-equiv=refresh content='3;URL=index.php'>";
             endif;
  
-            echo "<meta http-equiv=refresh content='3;URL=index.php'>";
-        endif;
+            
         ?>
