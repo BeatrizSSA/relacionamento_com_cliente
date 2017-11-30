@@ -7,8 +7,8 @@ require "bd/conexao.php";
  <br>
     <link rel="stylesheet" ty   pe="text/css" href="itens.css">
     <link rel="stylesheet"  href="./font-awesome-4.7.0/css/font-awesome.min.css">
- 	<link rel="stylesheet" type="text/css" href="../css/pagina_do_cliente.css">
- 	<div class="form-style-10">
+    <link rel="stylesheet" type="text/css" href="../css/pagina_do_cliente.css">
+    <div class="form-style-10">
     <form action="pesquisar.php" method="POST" id='form-contato' class="form-horizontal col-md-10">
         <label class="col-md-2 control-label" for="termo">Pesquisar</label>
             <div class='col-md-7'>
@@ -19,7 +19,7 @@ require "bd/conexao.php";
     </form>    
                 
     <a href='produtos.php' class="btn" style="background: blue; color: white;">Cadastrar Novo Produtos</a>
-    	<div class='clearfix'></div> 
+        <div class='clearfix'></div> 
 
 <br>
 
@@ -37,14 +37,13 @@ require "bd/conexao.php";
                 <th>editar</th>
             </tr>
 <?php
-        require "bd/conexao.php";
-        $stmt = "SELECT * FROM cadastro";
-        $resultado = PDO::query($conn, $stmt) or die('Erro ao tentar cadastrar registro');
-        $name = PDO::query($conn, "SELECT id, nome, quantidade, preco  FROM cadastro") or die(mysql_error($conn));
-        $re = fetchAll($name);
-        while($dados = fetchAll($resultado)): 
+    include "bd/conexao.php";
+    $stmt = "SELECT * FROM cadastro";
+    foreach ($conn->query($stmt) as $row) {
+         echo $row['nome'];
+    }
 ?>
-        
+   
 <?php
     $id = $dados['id'];
     $nome=$dados['nome'];
@@ -59,9 +58,5 @@ require "bd/conexao.php";
             </tr>";
 ?>
       
-<?php
-    endwhile;
-    mysqli_close($conn);
-?>
-        </table>        
-:
+
+        </table> 

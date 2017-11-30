@@ -4,8 +4,7 @@ $host = "localhost";
 $banco = "id2969958_projeto";
 $user = "id2969958_webmarket";
 $pass = "rogerinho";
-$conexao = mysqli_connect($host, $user, $pass) or die(mysqli_error());
-mysqli_select_db($conexao, $banco) or die(mysqli_error());
+require 'conexao.php';
 ?>
 <!DOCTYPE html>
 <html>
