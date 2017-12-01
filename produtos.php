@@ -10,21 +10,27 @@
     <link rel="stylesheet"  href="./font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/itens.css">
  	<div class="form-style-10">
-    <form action="bd/cadastrar_produtos.php" method="POST" class="formulario">
-     
-        Nome Do Produto:
-        <input type="text" name="nome" placeholder="Digite o nome do item" required/><br>
-        <br>
-        Quantidade em estoque:
-        <input type="text" name="quantidade" placeholder="Digite a quantidade" required/><br>
-        <br>
-        Preço:
-        <input type="numero" name="preco" placeholder="Digite o Preço." maxlength="5" required/><br>
-        <br>
+
+    <div class="container">
+        <form action="bd/cadastrar_produtos.php" method="POST" class="formulario">
+        <div class="form-group">
+            <label for="fname">Nome Do Produto:</label><br>
+            <input type="text" class="form-control col-sm-4" id="fname" name="nome" placeholder="Digite o nome do item" required/>
+        </div>
+        <div class="form-group">
+            <label for="fname">Quantidade em estoque:</label><br>
+            <input type="text" class="form-control" id="fname" name="quantidade" placeholder="Digite a quantidade" required/>
+        </div>
+        <div class="form-group">
+            <label for="fname">Preço:</label><br>
+            <input type="numero" class="form-control" id="fname" name="preco" placeholder="Digite o Preço." maxlength="5" required/><br>
+        </div>
+                
+            <input type="submit" value="Salvar" class="btn" style="background: black; color: white;"> <br>
+
             
-        <input type="submit" value="Salvar" class="btn" style="background: black; color: white;"> <br>
-        
-    </form>
+        </form>
+    </div>
       
 </body>
 </html>

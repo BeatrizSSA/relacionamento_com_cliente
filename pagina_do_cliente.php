@@ -28,7 +28,7 @@ require "bd/conexao.php";
     <body>
         <br>
         <br>
-        <table class="quadrado">
+        <table class="table table-bordered">
             <tr>
                 <th>Nome </th>
                 <th>Quantidade</th>
