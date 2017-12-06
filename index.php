@@ -3,7 +3,12 @@
   include 'header.php';
   include 'bd/conexao.php';
 ?>
-
+<style>
+      #map {
+        height: 800px;
+        width: 100%;
+      }
+    </style>
 <section>
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -82,6 +87,25 @@
    <button type="button" class="btn btn-info btn-lg"><a href="moreinfo.php">Mais opiniões</a></butto>
     </div>
   </div>
+  
+    <h3>Encontre-nos</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var brazil = {lat: -7.847, lng: -34.927};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: brazil
+        });
+        var marker = new google.maps.Marker({
+          position: brazil,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACdHLRrE4ClZirHznyfH29oSl26Pcrm6g&callback=initMap">
+    </script>
 
 <?php
 
