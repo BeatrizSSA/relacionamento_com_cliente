@@ -55,3 +55,8 @@ require "bd/conexao.php";
 ?>
    
       </table>   
+
+
+<?php  
+  include 'footer.php';
+?>

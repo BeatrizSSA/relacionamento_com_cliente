@@ -1,14 +1,14 @@
 <?php
-    include 'header.php';
+include "header.php";
+require "bd/conexao.php"; 
 ?>
 
 
-<body style="text-align:center;">
 <br>
 <br>
 	<link rel="stylesheet" type="text/css" href="../css/produtos.css">
     <link rel="stylesheet"  href="./font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/itens.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../css/itens.css"> -->
  	<div class="form-style-10">
 
     <div class="container">
@@ -32,5 +32,6 @@
         </form>
     </div>
       
-</body>
-</html>
+<?php  
+  include 'footer.php';
+?>
